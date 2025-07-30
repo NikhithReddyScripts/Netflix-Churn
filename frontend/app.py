@@ -22,13 +22,11 @@ if st.button("Predict"):
         else:
             payload = {"features": features}
             response = requests.post(API_URL, json=payload)
-
-            # Debug print
-            st.write("📦 Raw response JSON:", response.text)
+            
 
             result = response.json()
             st.success(f"🎯 Prediction: {'Churn' if result['prediction'] else 'Not Churn'}")
-            st.info(f"📈 Probability of Churn: {result['churn_probability']*100:.2f}%")
+            
 
     except ValueError:
         st.error("❌ Invalid input. Make sure all values are numbers separated by commas.")
