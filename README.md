@@ -25,7 +25,7 @@ Churn prediction helps streaming platforms like Netflix identify users who are l
 
 ### Setup and Views  
 - Uploaded data to **Supabase**  
-- Created 6 useful views for exploratory analysis:
+- Created 6 useful views in Supabase for exploratory analysis:
   - `churn_summary_by_age`
   - `churn_rate_by_subscription_region_genre`
   - `churn_rate_by_gender_genre`
