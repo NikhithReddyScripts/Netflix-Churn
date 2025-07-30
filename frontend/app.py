@@ -3,7 +3,7 @@ import requests
 import numpy as np
 
 # Render API URL (your deployed FastAPI URL)
-API_URL = "https://your-fastapi-app.onrender.com/predict"
+API_URL = "https://churn-backend.onrender.com/predict"
 
 st.title("📊 Netflix Churn Predictor (PCA-based)")
 
